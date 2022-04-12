@@ -1,0 +1,35 @@
+stack:
+    col:
+        // Status
+        border [height: 3, width: max]:
+            container [width: max]:
+                text [bold: true, trim-end: false]: "hi "
+                    span [dim: true]: "this is dim"
+
+        // Log
+        container [flex: 1, height: max]:
+            viewport [height: 10, name: "output", auto-scroll: true, direction: horz, reverse: true]:
+
+        // Input
+        container [height: 1]:
+            stack:
+                border [sides: top, width: max]:
+                position [left: 2]:
+                    text: "[ beep blop ]"
+
+        input [name: "input-row", input-name: "input", border-name: "border-title", cursor-name: "cursor"]:
+
+        // row [name: "input-row"]:
+        //     container:
+        //         text [trim-end: false, name: "border-title"]: "[ ] > "
+        //     stack:
+        //         position [name: "cursor", left: 0, display: exclude]:
+        //             container [width: 1, height: 1, background: white]:
+        //         container:
+        //             text [name: "input", foreground: red, trim-start: false, collapse-spaces: false]: ""
+
+    // Some kind of overlay
+    // position [align: centre]: 
+    //     container [width: 20, height: 10, background: red]:
+    //         border:
+    //             text: "floppy flappy flimflam"

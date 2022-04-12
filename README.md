@@ -3,7 +3,6 @@
 The tiny* log viewer
 
 
-
 Thanks to Bizink for the name
 
 
